@@ -133,14 +133,14 @@
     <div class="hero-body">
       <div class="columns is-centered">
         <div class="column">
-          <img src="static/gifs/ezgif.com-animated-gif-maker_video.gif" alt="GIF 1">
+          <img src="static/gifs/ezgif.com-animated-gif-maker_video.gif" alt="Energy Based Transformer Video Prediction as Thinking">
         </div>
         <div class="column">
-          <img src="static/gifs/ezgif.com-animated-gif-maker_text.gif" alt="GIF 2">
+          <img src="static/gifs/ezgif.com-animated-gif-maker_text.gif" alt="Energy Based Transformer Language Model Prediction as Thinking">
         </div>
       </div>
       <h2 class="subtitle has-text-centered">
-        TODO add gif descriptions
+        Thinking Processes visualized as energy minimization for autoregressive EBTs. Initially, a random prediction is fed into the models, which yields high energy. Then, models iteratively refine these predictions by minimizing the energy through gradient descent (passing the gradient from the energy to predictions). This process is performed until convergence of the energy, enabling the model to know "when to stop thinking."
       </h2>
     </div>
   </div>
@@ -154,7 +154,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <zero-md no-shadow>
+          <zero-md no-shadow css-urls="[]">
             <script type="text/markdown">
               Inference-time computation techniques, analogous to human System 2 Thinking, have recently become popular for improving model performances. However, most existing approaches suffer from several limitations: they are modality-specific (e.g., working only in text), problem-specific (e.g., verifiable domains like math and coding), or require additional supervision/training on top of unsupervised pretraining (e.g., verifiers or verifiable rewards). In this paper, we ask the question *``Is it possible to **generalize** these System 2 Thinking approaches, and **develop models that learn to think solely from unsupervised learning?**''* Interestingly, we find the answer is **yes**, by learning to explicitly **verify** the compatibility (unnormalized probability) between inputs and candidate-predictions, and then re-framing prediction problems as optimization with respect to this verifier. 
               Specifically, we train Energy-Based Transformers (EBTs)---a new class of Energy-Based Models (EBMs)---to assign an **energy** (unnormalized probability) value to every input and candidate-prediction pair, enabling predictions through gradient descent-based energy minimization until convergence. This formulation enables System 2 Thinking to emerge from unsupervised learning, making it modality and problem agnostic. Additionally, to enable scalable EBMs, we introduce several key techniques for stable and parallelizable training, facilitating the emergence of strong System 2 Thinking capabilities. Across both discrete (text) and continuous (visual) modalities, we find EBTs scale faster than the dominant Transformer++ approach during training, achieving an up to 35% higher scaling rate with respect to data, batch size, parameters, FLOPs, and depth. During inference, EBTs improve performance with System 2 Thinking (i.e., extra computation) by 29% more than the Transformer++ on language tasks, and EBTs outperform Diffusion Transformers on image denoising while using 99% fewer forward passes. Further, we find that System 2 Thinking with EBTs yields larger performance improvements on data that is farther out-of-distribution, and that EBTs achieve better results than existing models on most downstream tasks given the same or worse pretraining performance, enabling EBTs to out-generalize existing paradigms. Consequently, EBTs are a flexible and exciting new paradigm for scaling both the **learning** and **thinking** capabilities of models.
