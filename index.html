@@ -43,6 +43,7 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
 </head>
 <body>
 
@@ -99,7 +100,7 @@
 
               <!-- Github link -->
               <span class="link-block">
-                <a href="https://github.com/alexiglad/ebt" target="_blank"
+                <a href="https://github.com/alexiglad/EBT" target="_blank"
                 class="external-link button is-normal is-rounded is-dark">
                 <span class="icon">
                   <i class="fab fa-github"></i>
@@ -150,16 +151,18 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
-            Inference-time computation techniques, analogous to human System 2 Thinking, have recently become popular for improving model performances. 
-            However, most existing approaches suffer from several limitations: they are modality-specific (e.g., working only in text), problem-specific (e.g., verifiable domains like math and coding), or require additional supervision/training on top of unsupervised pretraining (e.g., verifiers or verifiable rewards). In this paper, we ask the question \textit{``Is it possible to \textbf{generalize} these System 2 Thinking approaches, and \textbf{develop models that learn to think solely from unsupervised learning?}''} Interestingly, we find the answer is \textbf{yes}, by learning to explicitly \textbf{verify} the compatibility (unnormalized probability) between inputs and candidate-predictions, and then re-framing prediction problems as optimization with respect to this verifier. 
-            Specifically, we train Energy-Based Transformers (EBTs)---a new class of Energy-Based Models (EBMs)---to assign an \textbf{energy} (unnormalized probability) value to every input and candidate-prediction pair, enabling predictions through gradient descent-based energy minimization until convergence. 
-            This formulation enables System 2 Thinking to emerge from unsupervised learning, making it modality and problem agnostic. 
-            Additionally, to enable scalable EBMs, we introduce several key techniques for stable and parallelizable training, facilitating the emergence of strong System 2 Thinking capabilities.
-            Across both discrete (text) and continuous (visual) modalities, we find EBTs scale faster than the dominant Transformer++ approach during training, achieving an up to 35\% higher scaling rate with respect to data, batch size, parameters, FLOPs, and depth. 
-            During inference, EBTs improve performance with System 2 Thinking (i.e., extra computation) by 29\% more than the Transformer++ on language tasks, and EBTs outperform Diffusion Transformers on image denoising while using 99\% fewer forward passes. Further, we find that System 2 Thinking with EBTs yields larger performance improvements on data that is farther out-of-distribution, and that EBTs achieve better results than existing models on most downstream tasks given the same or worse pretraining performance, enabling EBTs to out-generalize existing paradigms.
-            Consequently, EBTs are a flexible and exciting new paradigm for scaling both the \textbf{learning} and \textbf{thinking} capabilities of models.
-          </p>
+          <zero-md no-shadow>
+            <script type="text/markdown">
+              Inference-time computation techniques, analogous to human System 2 Thinking, have recently become popular for improving model performances. 
+              However, most existing approaches suffer from several limitations: they are modality-specific (e.g., working only in text), problem-specific (e.g., verifiable domains like math and coding), or require additional supervision/training on top of unsupervised pretraining (e.g., verifiers or verifiable rewards). In this paper, we ask the question *``Is it possible to **generalize** these System 2 Thinking approaches, and **develop models that learn to think solely from unsupervised learning?**''* Interestingly, we find the answer is **yes**, by learning to explicitly **verify** the compatibility (unnormalized probability) between inputs and candidate-predictions, and then re-framing prediction problems as optimization with respect to this verifier. 
+              Specifically, we train Energy-Based Transformers (EBTs)---a new class of Energy-Based Models (EBMs)---to assign an **energy** (unnormalized probability) value to every input and candidate-prediction pair, enabling predictions through gradient descent-based energy minimization until convergence. 
+              This formulation enables System 2 Thinking to emerge from unsupervised learning, making it modality and problem agnostic. 
+              Additionally, to enable scalable EBMs, we introduce several key techniques for stable and parallelizable training, facilitating the emergence of strong System 2 Thinking capabilities.
+              Across both discrete (text) and continuous (visual) modalities, we find EBTs scale faster than the dominant Transformer++ approach during training, achieving an up to 35% higher scaling rate with respect to data, batch size, parameters, FLOPs, and depth. 
+              During inference, EBTs improve performance with System 2 Thinking (i.e., extra computation) by 29% more than the Transformer++ on language tasks, and EBTs outperform Diffusion Transformers on image denoising while using 99% fewer forward passes. Further, we find that System 2 Thinking with EBTs yields larger performance improvements on data that is farther out-of-distribution, and that EBTs achieve better results than existing models on most downstream tasks given the same or worse pretraining performance, enabling EBTs to out-generalize existing paradigms.
+              Consequently, EBTs are a flexible and exciting new paradigm for scaling both the **learning** and **thinking** capabilities of models.
+            </script>
+          </zero-md>
         </div>
       </div>
     </div>
@@ -177,28 +180,28 @@
         <!-- Your image here -->
         <img src="static/images/model_comparison.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Comparison of EBTs to existing approaches.
+          Comparison of EBTs to existing approaches
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
         <img src="static/images/proposed_model.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          EBTs for Autoregressive Modeling.
+          EBTs for Autoregressive Modeling
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
         <img src="static/images/energy_landscape_minimization.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-         Thinking Process Visualization.
+         Thinking Process Visualization
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
       <img src="static/images/thinking_performance.png" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
-        Generalization Performance with More Thinking.
+        Thinking Performances
       </h2>
     </div>
   </div>
@@ -215,13 +218,13 @@
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+      <h2 class="title is-3">Short Paper Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
             <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/TODO" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -231,38 +234,7 @@
 <!-- End youtube video -->
 
 
-<!-- Video carousel -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-<!-- End video carousel -->
+
 
 
 
