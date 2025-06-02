@@ -4,20 +4,20 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta name="description" content="We outscaled (feed-forward) transformers and generalized reasoning/system 2 thinking to any modality and problem. This is done by training a new class of models called Energy-Based Transformers (EBTs), which are energy based models designed for scalability, parallelizability, stability, and the ability to learn to think from unsupervised learning. The results are absolutely amazing--outscaling feed-forward transformers across modalities and axes (i.e. FLOPs, parameters, depth, even data).">
+  <meta property="og:title" content="Energy-Based Transformers: Outscaling Transformers and Generalizable Reasoning"/>
+  <meta property="og:description" content="Learn how Energy-Based Transformers (EBTs) enable improved scalability over traditional transformers while generalizing reasoning/thinking capabilities to be learned on any problem. #AI #DeepLearning #EBMs #Transformers #reasonig #system 2 thinking"/>
+  <meta property="og:url" content="https://alexiglad.github.io/energy_based_transformers/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image" content="static/images/banner.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <meta name="twitter:title" content="Energy-Based Transformers: Outscaling Transformers and Generalizable Reasoning">
+  <meta name="twitter:description" content="We outscaled (feed-forward) transformers and generalized reasoning/system 2 thinking to any modality and problem. This is done by training a new class of models called Energy-Based Transformers (EBTs), which are energy based models designed for scalability, parallelizability, stability, and the ability to learn to think from unsupervised learning. The results are absolutely amazing--outscaling feed-forward transformers across modalities and axes (i.e. FLOPs, parameters, depth, even data).">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:image" content="static/images/banner.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
   <meta name="keywords" content="deep learning, ai, reasoning, system 2 thinking, scaling, energy based models, energy-based models, transformers, ebms, verification, scaling law, test-time compute, inference-time compute, cognitively inspired energy based world models">
@@ -156,7 +156,7 @@
         <div class="content has-text-justified">
           <zero-md no-shadow data-dedent="12" style="display:block;width:100%;">
             <script type="text/markdown">
-Inference-time computation techniques, analogous to human System 2 Thinking, have recently become popular for improving model performances. However, most existing approaches suffer from several limitations: they are modality-specific (e.g., working only in text), problem-specific (e.g., verifiable domains like math and coding), or require additional supervision/training on top of unsupervised pretraining (e.g., verifiers or verifiable rewards). In this paper, we ask the question _"Is it possible to **generalize** these System 2 Thinking approaches, and **develop models that learn to think solely from unsupervised learning?**"_ Interestingly, we find the answer is **yes**, by learning to explicitly **verify** the compatibility (unnormalized probability) between inputs and candidate-predictions, and then re-framing prediction problems as optimization with respect to this verifier. Specifically, we train Energy-Based Transformers (EBTs)---a new class of Energy-Based Models (EBMs)---to assign an **energy** (unnormalized probability) value to every input and candidate-prediction pair, enabling predictions through gradient descent-based energy minimization until convergence. This formulation enables System 2 Thinking to emerge from unsupervised learning, making it modality and problem agnostic. Additionally, to enable scalable EBMs, we introduce several key techniques for stable and parallelizable training, facilitating the emergence of strong System 2 Thinking capabilities. Across both discrete (text) and continuous (visual) modalities, we find EBTs scale faster than the dominant Transformer++ approach during training, achieving an up to 35% higher scaling rate with respect to data, batch size, parameters, FLOPs, and depth. During inference, EBTs improve performance with System 2 Thinking (i.e., extra computation) by 29% more than the Transformer++ on language tasks, and EBTs outperform Diffusion Transformers on image denoising while using 99% fewer forward passes. Further, we find that System 2 Thinking with EBTs yields larger performance improvements on data that is farther out-of-distribution, and that EBTs achieve better results than existing models on most downstream tasks given the same or worse pretraining performance, enabling EBTs to out-generalize existing paradigms. Consequently, EBTs are a flexible and exciting new paradigm for scaling both the **learning** and **thinking** capabilities of models.
+Inference-time computation techniques, analogous to human System 2 Thinking, have recently become popular for improving model performances. However, most existing approaches suffer from several limitations: they are modality-specific (e.g., working only in text), problem-specific (e.g., verifiable domains like math and coding), or require additional supervision/training on top of unsupervised pretraining (e.g., verifiers or verifiable rewards). In this paper, we ask the question _"Is it possible to **generalize** these System 2 Thinking approaches, and **develop models that learn to think solely from unsupervised learning?**"_ Interestingly, we find the answer is **yes**, by learning to explicitly **verify** the compatibility (unnormalized probability) between inputs and candidate-predictions, and then re-framing prediction problems as optimization with respect to this verifier. Specifically, we train Energy-Based Transformers (EBTs)---a new class of Energy-Based Models (EBMs)---to assign an **energy** (unnormalized probability) value to every input and candidate-prediction pair, enabling predictions through gradient descent-based energy minimization until convergence. This formulation enables System 2 Thinking to emerge from unsupervised learning, making it modality and problem agnostic. Across both discrete (text) and continuous (visual) modalities, we find EBTs scale faster than the dominant Transformer++ approach during training, achieving an up to 35% higher scaling rate with respect to data, batch size, parameters, FLOPs, and depth. During inference, EBTs improve performance with System 2 Thinking (i.e., extra computation) by 29% more than the Transformer++ on language tasks, and EBTs outperform Diffusion Transformers on image denoising while using 99% fewer forward passes. Further, we find that System 2 Thinking with EBTs yields larger performance improvements on data that is farther out-of-distribution, and that EBTs achieve better results than existing models on most downstream tasks given the same or worse pretraining performance, enabling EBTs to out-generalize existing paradigms. Consequently, EBTs are a flexible and exciting new paradigm for scaling both the **learning** and **thinking** capabilities of models.
             </script>
           </zero-md>
         </div>
@@ -174,30 +174,51 @@ Inference-time computation techniques, analogous to human System 2 Thinking, hav
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/model_comparison.png" alt="MY ALT TEXT"/>
+        <img src="static/images/model_comparison.png" alt="Comparison of EBTs to existing approaches"/>
         <h2 class="subtitle has-text-centered">
           Comparison of EBTs to existing approaches
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/proposed_model.png" alt="MY ALT TEXT"/>
+        <img src="static/images/proposed_model.png" alt="EBTs for Autoregressive Modeling"/>
         <h2 class="subtitle has-text-centered">
           EBTs for Autoregressive Modeling
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/energy_landscape_minimization.png" alt="MY ALT TEXT"/>
+        <img src="static/images/energy_landscape_minimization.png" alt="EBT Thinking Process Visualization for Language Modeling"/>
         <h2 class="subtitle has-text-centered">
          EBT Thinking Process Visualization for Language Modeling
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/thinking_performance.png" alt="MY ALT TEXT"/>
+      <img src="static/images/thinking_performance.png" alt="Thinking Scalability of EBTs"/>
       <h2 class="subtitle has-text-centered">
-        Thinking Performances
+        Thinking Scalability of EBTs
+      </h2>
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/scaling_thinking_nlp_ar_ood.svg" alt="Thinking with EBTs Helps More on More OOD Data"/>
+      <h2 class="subtitle has-text-centered">
+        Thinking with EBTs Helps More on More OOD Data
+      </h2>
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/scaling_nlp_1.png" alt="EBTs Outscale Transformer++ in NLP"/>
+      <h2 class="subtitle has-text-centered">
+        EBTs Outscale Transformer++ in NLP
+      </h2>
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/scaling_video_1.png" alt="EBTs Outscale Transformer++ in Video"/>
+      <h2 class="subtitle has-text-centered">
+        EBTs Outscale Transformer++ in Video
       </h2>
     </div>
   </div>
