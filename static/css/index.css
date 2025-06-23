@@ -27,6 +27,13 @@ body {
   font-family: 'Google Sans', sans-serif;
 }
 
+.teaser-gif {
+  height: 250px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 
 .publication-title {
 }
