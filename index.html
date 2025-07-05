@@ -90,7 +90,7 @@
 
                     <!-- ArXiv abstract Link -->
                   <span class="link-block">
-                    <a href="https://arxiv.org/abs/<TODO ARXIV PAPER ID>" target="_blank"
+                    <a href="https://arxiv.org/abs/2507.02092" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -328,12 +328,35 @@ Inference-time computation techniques, analogous to human System 2 Thinking, hav
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>TODO add BibTex Code Here</code></pre>
-    </div>
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">
+      BibTeX
+      <button id="copyBibtex" class="button is-small is-dark is-pulled-right">Copy</button>
+    </h2>
+    <pre><code id="bibtexCitation">@misc{gladstone2025energybasedtransformersscalablelearners,
+  title={Energy-Based Transformers are Scalable Learners and Thinkers},
+  author={Alexi Gladstone and Ganesh Nanduru and Md Mofijul Islam and Peixuan Han and Hyeonjeong Ha and Aman Chadha and Yilun Du and Heng Ji and Jundong Li and Tariq Iqbal},
+  year={2025},
+  eprint={2507.02092},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  url={https://arxiv.org/abs/2507.02092}
+}</code></pre>
+  </div>
 </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.getElementById('copyBibtex')
+  const code = document.getElementById('bibtexCitation')
+  if (btn && code) {
+    btn.addEventListener('click', () =>
+      navigator.clipboard.writeText(code.innerText.trim())
+    )
+  }
+})
+</script>
 <!--End BibTex citation -->
 
 
