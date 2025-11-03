@@ -142,3 +142,42 @@ body {
 
 
 
+/* New EBT Works highlight */
+.pop-button {
+  box-shadow: 0 6px 18px rgba(255, 56, 96, 0.18);
+  transition: transform .12s ease, box-shadow .12s ease, filter .12s ease;
+}
+
+.pop-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(255, 56, 96, 0.28);
+  filter: brightness(1.01);
+}
+
+.attention-pulse {
+  animation: pulseGlow 2.2s ease-out infinite;
+}
+
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 0 0 rgba(255, 56, 96, 0.40); }
+  70% { box-shadow: 0 0 0 8px rgba(255, 56, 96, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 56, 96, 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .attention-pulse { animation: none; }
+}
+
+.new-badge {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 2px 6px;
+  font-size: 0.9em;
+  line-height: 1;
+  border-radius: 999px;
+  font-weight: 900;
+  letter-spacing: .02em;
+  color: #ffffff;
+  background: linear-gradient(90deg, #ffb74d, #ff8f00);
+}
+
